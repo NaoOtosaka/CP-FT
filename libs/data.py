@@ -1,5 +1,5 @@
 import config
-from libs.tools import *
+from tools.show import *
 
 
 def get_input_2_boolean(tip_msg):
