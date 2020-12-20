@@ -9,7 +9,7 @@ work_path = sys.path[0]
 projectDir = work_path + '\\project\\'
 
 # 模板文件路径
-tempDir = work_path + '\\temp\\'
+tempDir = work_path + '\\template\\'
 
 # 模板文件设置====================================================================
 # 完整用例模板
