@@ -14,6 +14,7 @@ def setup():
     data = data_input()
     show_input_info(data)
     create_file(data)
+    input('创建完成')
 
 
 if __name__ == '__main__':

@@ -1,9 +1,10 @@
 import sys
 import time
+import os
 
 # 工作路径=======================================================================
 # 主路径
-work_path = sys.path[0]
+work_path = os.path.dirname(os.path.realpath(sys.executable))
 
 # 项目创建路径
 projectDir = work_path + '\\project\\'
