@@ -7,7 +7,7 @@ a = Analysis(['main.py'],
              pathex=['D:\\Project\\Local\\Python\\CP-FT'],
              binaries=[],
              datas=[
-                ('config.py', ''),
+                ('conf.json', '.'),
                 ('./template', 'template'),
                 ('./libs', 'libs'),
                 ('./tools', 'tools'),
