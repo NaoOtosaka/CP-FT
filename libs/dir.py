@@ -1,3 +1,4 @@
+import os
 from tools.check import *
 
 
@@ -45,3 +46,16 @@ def create_other_subdirectory_dir(project_dir_path):
         project_dir_path + config.origin_case_dir_name + '\\',
         project_dir_path + config.execute_case_dir_name + '\\'
     ]
+
+
+def open_dir(path):
+    """
+    打开对应文件夹
+    :param path:
+    :return:
+    """
+    if path:
+        os.startfile(path=path)
+        return True
+    else:
+        return False

@@ -26,6 +26,11 @@ def create_project(project_name, has_smoke_test, h5_compatibility, web_compatibi
     if web_compatibility:
         print('======>>>>>载入WEB兼容性模板')
         cp_web_compatibility_file(project_path, project_name)
+    # 打开对应目录
+    if open_dir(project_path):
+        print("项目生成路径：" + project_path)
+    else:
+        print("路径异常")
 
 
 def main(data_dict):
@@ -34,4 +39,5 @@ def main(data_dict):
     :param data_dict:
     :return:
     """
+    # 文件初始化
     create_project(data_dict['项目名'], data_dict['冒烟测试'], data_dict['H5兼容性自测'], data_dict['WEB兼容性自测'])
