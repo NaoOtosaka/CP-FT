@@ -20,7 +20,7 @@ def dump_conf(conf):
     f = open('conf.json', 'w', encoding='utf-8')
     try:
         f.write(conf)
-        print("路径更新成功")
+        print("路径更新成功,重新启动以生效")
         return True
     except IOError:
         print("配置文件更新失败")

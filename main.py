@@ -17,7 +17,10 @@ def setup():
     if not show_project_path():
         print('未定义项目输出路径')
     else:
-        edit_project_path()
+        if edit_project_path():
+            input('')
+            return
+
     print('===================================')
     # 信息输入
 
