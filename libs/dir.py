@@ -1,5 +1,7 @@
-import os
+import tkinter
+from tkinter import filedialog
 from tools.check import *
+from tools.setConfig import *
 
 
 def create_project_dir(project_name):
@@ -59,3 +61,32 @@ def open_dir(path):
         return True
     else:
         return False
+
+
+def get_project_dir_path():
+    """
+    自定义选择路径
+    :return:
+    """
+    root = tkinter.Tk()
+    root.withdraw()
+
+    folder_path = filedialog.askdirectory()
+
+    return folder_path
+
+
+def edit_project_path():
+    """
+    更新选择项目输出路径
+    :return:
+    """
+    if input('是否需要重新定义输出路径？(y/n/回车跳过)') == 'y':
+        project_path = get_project_dir_path()
+        if project_path:
+            conf = load_conf()
+            conf['projectDir'] = project_path + '/'
+            if dump_conf(conf):
+                return True
+            else:
+                return False

@@ -1,4 +1,3 @@
-import config
 from tools.show import *
 
 

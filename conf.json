@@ -1,16 +1,13 @@
 {
-  "projectDir": ".\\project\\",
-  "tempDir": ".\\template\\",
-
+  "projectDir": "./project/",
+  "tempDir": "./template/",
   "case_temp_file_name": "caseTemplate.xlsx",
   "smoke_case_temp_file_name": "smokeTemplate.xlsx",
   "H5_compatibility_file_name": "H5Compatibility.xlsx",
   "web_compatibility_file_name": "webCompatibility.xlsx",
-
   "smoke_dir_name": "冒烟测试",
   "origin_case_dir_name": "原始用例",
   "execute_case_dir_name": "执行用例",
-
   "case_file_name": "-测试用例.xlsx",
   "smoke_file_name": "-冒烟用例.xlsx",
   "H5_file_name": "-H5兼容性测试.xlsx",
