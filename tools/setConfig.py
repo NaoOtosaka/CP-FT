@@ -8,7 +8,6 @@ def load_conf():
     """
     f = open("conf.json", encoding='utf-8')
     setting = json.load(f)
-    print(type(setting))
     return setting
 
 

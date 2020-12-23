@@ -18,6 +18,7 @@ def setup():
         print('未定义项目输出路径')
     else:
         edit_project_path()
+    print('===================================')
     # 信息输入
     data = data_input()
     # 信息复核
