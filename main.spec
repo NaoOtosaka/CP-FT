@@ -9,8 +9,6 @@ a = Analysis(['main.py'],
              datas=[
                 ('conf.json', '.'),
                 ('./template', 'template'),
-                ('./libs', 'libs'),
-                ('./tools', 'tools'),
              ],
              hiddenimports=[],
              hookspath=[],
