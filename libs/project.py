@@ -31,6 +31,7 @@ def create_project(project_name, has_smoke_test, h5_compatibility, web_compatibi
         print("项目生成路径：" + project_path)
     else:
         print("路径异常")
+        input("")
 
 
 def main(data_dict):

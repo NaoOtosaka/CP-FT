@@ -57,7 +57,7 @@ def open_dir(path):
     :return:
     """
     if path:
-        os.startfile(path=path)
+        os.startfile(path)
         return True
     else:
         return False
@@ -85,7 +85,7 @@ def edit_project_path():
         project_path = get_project_dir_path()
         if project_path:
             conf = load_conf()
-            conf['projectDir'] = project_path + '/'
+            conf['projectDir'] = project_path + '\\'
             if dump_conf(conf):
                 return True
             else:

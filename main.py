@@ -20,6 +20,7 @@ def setup():
         edit_project_path()
     print('===================================')
     # 信息输入
+
     data = data_input()
     # 信息复核
     show_input_info(data)
